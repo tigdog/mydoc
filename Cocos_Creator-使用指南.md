@@ -148,9 +148,9 @@
     import  com.youme.voiceengine.mgr.YouMeManager;
     import  com.youme.voiceengine.*;
     ```
-然后在onCreate方法里添加如下代码(没有此方法的话需要自己补上)：
+    然后在onCreate方法里添加如下代码(没有此方法的话需要自己补上)：
 
-```
+    ```
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -162,7 +162,7 @@
         startService(intent);
 
     }
-```
+    ```
 
 ### iOS系统XCode开发环境配置
 
