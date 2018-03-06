@@ -28,8 +28,8 @@
 * ![](https://www.youme.im/doc/images/talk_cocos_project_directory.png)
 * 文件拷贝：把jsb_youmetalk.h，jsb_youmetalk.cpp放入`...\frameworks\runtime-src\Classes`目录
 * 接口注册：修改Classes目录内的AppDelegate.cpp文件：
-	* 增加：`#include "jsb/jsb_youmetalk.hpp"`
-	* 在`AppDelegate::applicationDidFinishLaunching()`方法内的`se->start();`之前，加上：`se->addRegisterCallback(register_all_youmetalk);`
+	* 添加引用：`#include "jsb/jsb_youmetalk.hpp"`
+	* 添加代码：在`AppDelegate::applicationDidFinishLaunching()`方法内的`se->start();`之前，加上：`se->addRegisterCallback(register_all_youmetalk);`
 
 ### Android系统Android-Studio开发环境配置
 
@@ -150,7 +150,7 @@
     ```
 然后在onCreate方法里添加如下代码(没有此方法的话需要自己补上)：
 
-    ```
+```
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -162,7 +162,7 @@
         startService(intent);
 
     }
-    ```
+```
 
 ### iOS系统XCode开发环境配置
 
