@@ -22,7 +22,7 @@
 
 将youmetalk.js放置到`项目名\assets\Script`目录中
 
-### 编译前的文件集成
+### 构建后的SDK集成
 * 构建：Cocos Creator菜单选择：`项目->构建发布`，在弹出的面板上选择`发布平台->***`，`模板->link`，然后点击构建。
 * 目录拷贝：构建成功后，打开生成的目录：`项目名\build\jsb-link\frameworks\runtime-src`，目录结构与下图类似，将引擎SDK目录更名为youme_voice_engine（内含“include”和“lib”两个子文件夹），并复制到该目录下，这个目录下包含了Android、iOS、windows三个平台所需的所有C++头文件和库文件。
 * ![](https://www.youme.im/doc/images/talk_cocos_project_directory.png)
